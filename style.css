@@ -12,6 +12,43 @@ body {
     overflow-x: hidden;
 }
 
+/*Style the nav bar */
+
+nav {
+    background: #f2f2f2;
+    padding: 10px;
+}
+  
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+  
+nav ul li {
+    margin-right: 10px;
+}
+  
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+}
+
+/*End of style */
+/*Style the landing page */
+
+.landing-page-content {
+    height: 100vh; /* Adjust the height as needed */
+    background: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*End of style */
+/*Style the map kiosk */
+
 .container {
     position: absolute;
     display: flex;
@@ -102,22 +139,4 @@ body {
     text-align: center;
 }
 
-@media (width <= 1100px) {
-    #modalText, #modalTitle {
-        font-size: smaller;
-    }
-}
-
-@media(width < 930px) {
-    .map {
-        width: 30vw;
-    }   
-
-    #modalImage {
-        max-height: 15em;
-    }
-
-    .modal {
-        z-index: 2;
-    }
-}
+/*End of style */

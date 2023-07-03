@@ -39,13 +39,23 @@ nav ul li a {
 /*Style the landing page */
 
 .landing-page-content {
-    height: 100vh; /* Adjust the height as needed */
-    background: #f9f9f9;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+  
+.hero-image {
+    max-width: 100%;
+    max-height: 100%;
+}
+  
+.hero-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+  
 /*End of style */
 /*Style the map kiosk */
 
@@ -54,6 +64,11 @@ nav ul li a {
     display: flex;
     height: 100%; width: 100%;
     gap: 2em;
+}
+
+#map-kiosk {
+    margin-top: 2em;
+    padding-top: 2em;
 }
 
 .headtext {
@@ -130,9 +145,12 @@ nav ul li a {
     text-align: center;
 }
 
+/*End of style */
+/*Style the footer */
+
 .footer {
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     background-color: #000;
     color: #fff;

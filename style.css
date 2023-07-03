@@ -109,11 +109,11 @@ nav ul li a {
     background: rgba(233, 241, 188, 0.719);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     align-items: center;
+    transition: opacity 0.4s ease-in-out;
 }
 
 .modal.active {
     opacity: 1;
-    transition: opacity 0.6s ease-in-out;
 }
 
 #modalContent {

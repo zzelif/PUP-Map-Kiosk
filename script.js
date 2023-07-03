@@ -49,11 +49,12 @@ function handleMouseOut() {
   modalText.innerText = '';
 }
 
-// Disable window resizing beyond a certain width
-window.addEventListener('resize', function() {
-  if (window.innerWidth > 930) {
-    document.body.style.overflow = 'hidden';
-  } else {
-    document.body.style.resize = 'none';
-  }
+// Smooth scroll on nav link click
+document.querySelectorAll('nav ul li a').forEach(function(navLink) {
+  navLink.addEventListener('click', function(event) {
+      event.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
 });
